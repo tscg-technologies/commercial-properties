@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us &amp; Enquiries | COMMERCIAL PROPERTIES</title>
+  <meta name="description" content="Connect with our commercial real estate advisory team for space planning, leasing terms, and property walkthroughs.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-logo">
+        COMMERCIAL <span>PROPERTIES</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="properties.html" class="nav-link">Properties</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link" aria-haspopup="true">Categories ▾</a>
+          <div class="dropdown-menu">
+            <a href="office-spaces.html" class="dropdown-item">Office Spaces</a>
+            <a href="retail.html" class="dropdown-item">Retail &amp; Showrooms</a>
+            <a href="industrial.html" class="dropdown-item">Warehouses &amp; Industrial</a>
+          </div>
+        </div>
+        <a href="investment.html" class="nav-link">Investment</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiryModal('Direct Contact')">Enquire Now</button>
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="properties.html" class="mobile-nav-link">All Properties</a>
+      <a href="office-spaces.html" class="mobile-nav-link">Office Spaces</a>
+      <a href="retail.html" class="mobile-nav-link">Retail &amp; Showrooms</a>
+      <a href="industrial.html" class="mobile-nav-link">Warehouses &amp; Industrial</a>
+      <a href="investment.html" class="mobile-nav-link">Investment Guide</a>
+      <a href="blog.html" class="mobile-nav-link">Commercial Insights Blog</a>
+      <a href="contact.html" class="mobile-nav-link active">Contact &amp; Enquiry</a>
+    </nav>
+  </aside>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <span>Contact &amp; Commercial Enquiries</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero-title">Contact &amp; Commercial Enquiries</h1>
+        <p class="page-hero-subtitle">
+          Submit your commercial real estate space requirements, schedule a property walkthrough, or request lease evaluation packets.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Content Layout -->
+    <section class="section section-bg-light">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Information Column -->
+          <div>
+            <div class="contact-info-card">
+              <h3>Demo Office Information</h3>
+              <p style="color: #CBD5E1; margin-bottom: 2rem; font-size: 0.95rem;">
+                This platform is a commercial real estate demonstration portal. The contact numbers and addresses below are sample placeholder representations.
+              </p>
+
+              <div class="contact-info-list">
+                <div class="contact-info-item">
+                  <span class="contact-info-icon">📍</span>
+                  <div>
+                    <strong>Demo Office Address:</strong>
+                    <p style="color: #CBD5E1; margin-top: 0.25rem;">Demo Commercial Property Office, Demo City, India</p>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <span class="contact-info-icon">📞</span>
+                  <div>
+                    <strong>Phone Support:</strong>
+                    <p style="color: #CBD5E1; margin-top: 0.25rem;">+91 90000 00000 (Sample Demo)</p>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <span class="contact-info-icon">✉️</span>
+                  <div>
+                    <strong>Email Correspondence:</strong>
+                    <p style="color: #CBD5E1; margin-top: 0.25rem;">demo@example.com (Sample Demo)</p>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <span class="contact-info-icon">🕒</span>
+                  <div>
+                    <strong>Working Hours:</strong>
+                    <p style="color: #CBD5E1; margin-top: 0.25rem;">Monday – Saturday: 9:00 AM – 6:00 PM</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-image-placeholder has-image" style="border-radius: var(--radius-md); aspect-ratio: 16/9; background: #2A4365; border-color: rgba(255,255,255,0.1);">
+                <img src="assets/images/COMMERCIAL_PROPERTIES_b782fce8.jpg" alt="Commercial Properties Headquarters" class="property-image">
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Interactive Enquiry Form (Section 5 Page 10 Requirements) -->
+          <div>
+            <div class="form-card">
+              <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem;">Submit Commercial Enquiry</h2>
+              <p style="color: var(--color-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                Fill out the required parameters below. Form validation operates purely via client-side JavaScript without external network transmission.
+              </p>
+
+              <div class="form-alert alert-success">
+                ✓ Thank you! Your commercial enquiry has been successfully validated.
+              </div>
+
+              <form class="validate-form">
+                <div class="form-group" style="margin-bottom: 1.25rem;">
+                  <label class="form-label" for="contactFullName">Full Name *</label>
+                  <input type="text" id="contactFullName" name="fullName" class="form-control" placeholder="Enter your full name">
+                  <span class="form-feedback"></span>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="contactEmail">Corporate Email *</label>
+                    <input type="email" id="contactEmail" name="email" class="form-control" placeholder="name@company.com">
+                    <span class="form-feedback"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="contactPhone">Phone Number *</label>
+                    <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="10-digit number">
+                    <span class="form-feedback"></span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="contactPropertyType">Interested Property Type *</label>
+                    <select id="contactPropertyType" name="propertyType" class="form-control">
+                      <option value="office">Office Spaces</option>
+                      <option value="retail">Retail &amp; Showrooms</option>
+                      <option value="industrial">Warehouses &amp; Industrial</option>
+                      <option value="commercial-building">Commercial Buildings</option>
+                      <option value="co-working">Co-working &amp; Business Centers</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="contactPurpose">Transaction Purpose *</label>
+                    <select id="contactPurpose" name="purpose" class="form-control">
+                      <option value="rent">Lease / Rent Space</option>
+                      <option value="buy">Outright Acquisition / Buy</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.25rem;">
+                  <label class="form-label" for="contactBudget">Estimated Budget Range</label>
+                  <select id="contactBudget" name="budget" class="form-control">
+                    <option value="under-2l">Under ₹2,00,000 / month</option>
+                    <option value="2l-5l">₹2,00,000 to ₹5,00,000 / month</option>
+                    <option value="5l-15l">₹5,00,000 to ₹15,00,000 / month</option>
+                    <option value="over-15l">Above ₹15,00,000 / month</option>
+                    <option value="purchase-5cr">Purchase: Under ₹15 Crore</option>
+                    <option value="purchase-15cr+">Purchase: Above ₹15 Crore</option>
+                  </select>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.75rem;">
+                  <label class="form-label" for="contactMessage">Commercial Requirements &amp; Timeline *</label>
+                  <textarea id="contactMessage" name="message" class="form-control" rows="4" placeholder="Detail your required square footage, desired move-in date, parking requirements, or fit-out preferences..."></textarea>
+                  <span class="form-feedback"></span>
+                </div>
+
+                <button type="submit" class="btn btn-navy btn-block" style="padding: 0.9rem;">Submit Commercial Enquiry</button>
+                <p style="font-size: 0.775rem; color: var(--color-muted); text-align: center; margin-top: 1rem;">
+                  🔒 Notice: Frontend demonstration only. No personal information is stored or transmitted over any network.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="section section-bg-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">FAQ</span>
+          <h2 class="section-title">Commercial Enquiry FAQs</h2>
+          <p class="section-desc">Helpful answers regarding client walkthroughs and space planning processes.</p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span>How are site inspections arranged?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              On a live platform, commercial site inspections are coordinated with the building facility manager or developer leasing director following initial qualification of spatial requirements and tenant covenant parameters.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span>What information is required to receive commercial lease draft terms?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Corporate entities typically submit a formal Request for Proposal (RFP) outlining target usable area, floorplate contiguous requirements, electrical load expectations, and desired tenure prior to receiving formal commercial terms.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span>Is my submission private?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Yes. This website operates strictly as a static frontend demo. Form submissions trigger client-side JavaScript validation logic only, without any external database transmission.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Enquiry CTA -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Need Institutional Representation for Your Portfolio?</h2>
+          <p>
+            Whether disposing of an institutional asset or leasing contiguous commercial floors, experience our structured commercial real estate methodology.
+          </p>
+          <button type="button" class="btn btn-primary" onclick="openEnquiryModal('Institutional Representation')">Request Commercial Consultation</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>COMMERCIAL PROPERTIES</h3>
+        <p>A professional commercial real estate listing showcase demonstrating offices, retail shops, standalone buildings, and modern logistics assets.</p>
+        <span class="badge badge-demo">Frontend Demonstration Portal</span>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Portal</a></li>
+          <li><a href="properties.html">All Properties</a></li>
+          <li><a href="investment.html">Investment Overview</a></li>
+          <li><a href="blog.html">Commercial Insights</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Property Sectors</h4>
+        <ul class="footer-links">
+          <li><a href="office-spaces.html">Commercial Offices</a></li>
+          <li><a href="retail.html">Retail &amp; Showrooms</a></li>
+          <li><a href="industrial.html">Warehouses &amp; Logistics</a></li>
+          <li><a href="properties.html?category=commercial-building">Commercial Plazas</a></li>
+          <li><a href="properties.html?purpose=rent">Leasing Solutions</a></li>
+          <li><a href="properties.html?purpose=buy">Outright Purchases</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Demo Contact</h4>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <span>Demo Commercial Property Office, Demo City, India</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>📞</span>
+          <span>+91 90000 00000</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>✉️</span>
+          <span>demo@example.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>🕒</span>
+          <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Commercial Properties. Generic demo showcase. All content, prices, and assets are sample data.</p>
+      <div class="footer-bottom-links">
+        <a href="about.html">Privacy Policy (Demo)</a>
+        <a href="about.html">Terms &amp; Conditions (Demo)</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="enquiryModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Commercial Enquiry</h3>
+      <p style="color: var(--color-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Demo enquiry form. No data is stored.</p>
+      <div id="modalSuccessAlert" class="form-alert alert-success">✓ Enquiry validated successfully.</div>
+      <form id="modalEnquiryForm">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label">Full Name *</label>
+          <input type="text" name="fullName" class="form-control" placeholder="John Doe">
+          <span class="form-feedback"></span>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" name="email" class="form-control" placeholder="name@business.com">
+            <span class="form-feedback"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" name="phone" class="form-control" placeholder="10-digit number">
+            <span class="form-feedback"></span>
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label">Property Interest</label>
+          <input type="text" id="modalPropertyInterest" name="propertyInterest" class="form-control" value="Commercial Advisory">
+        </div>
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label class="form-label">Message</label>
+          <textarea name="message" class="form-control" rows="3" placeholder="Commercial requirement details..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-navy btn-block">Submit Demo Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

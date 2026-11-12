@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retail Properties &amp; Commercial Showrooms | COMMERCIAL PROPERTIES</title>
+  <meta name="description" content="Explore prime retail shops, high-street corner outlets, shopping mall units, and luxury automobile showrooms with high footfall.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-logo">
+        COMMERCIAL <span>PROPERTIES</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="properties.html" class="nav-link">Properties</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link active" aria-haspopup="true">Categories ▾</a>
+          <div class="dropdown-menu">
+            <a href="office-spaces.html" class="dropdown-item">Office Spaces</a>
+            <a href="retail.html" class="dropdown-item">Retail &amp; Showrooms</a>
+            <a href="industrial.html" class="dropdown-item">Warehouses &amp; Industrial</a>
+          </div>
+        </div>
+        <a href="investment.html" class="nav-link">Investment</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiryModal('Retail Inquiry')">Enquire Now</button>
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="properties.html" class="mobile-nav-link">All Properties</a>
+      <a href="office-spaces.html" class="mobile-nav-link">Office Spaces</a>
+      <a href="retail.html" class="mobile-nav-link active">Retail &amp; Showrooms</a>
+      <a href="industrial.html" class="mobile-nav-link">Warehouses &amp; Industrial</a>
+      <a href="investment.html" class="mobile-nav-link">Investment Guide</a>
+      <a href="blog.html" class="mobile-nav-link">Commercial Insights Blog</a>
+      <a href="contact.html" class="mobile-nav-link">Contact &amp; Enquiry</a>
+    </nav>
+  </aside>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="properties.html">Categories</a>
+      <span class="breadcrumb-separator">/</span>
+      <span>Retail &amp; Showrooms</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- Retail Property Hero Section -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero-title">Retail Properties &amp; Showrooms</h1>
+        <p class="page-hero-subtitle">
+          Commanding commercial storefronts, anchor mall units, and lifestyle showrooms situated at high-density pedestrian corridors.
+        </p>
+      </div>
+    </section>
+
+    <!-- Introduction to Retail Properties -->
+    <section class="section section-bg-white">
+      <div class="container">
+        <div class="grid grid-cols-2 items-center gap-4">
+          <div>
+            <span class="section-subtitle">Retail Exposure</span>
+            <h2 class="section-title">Maximum Footfall &amp; Unrivaled Street Visibility</h2>
+            <p style="color: var(--color-muted); margin-bottom: 1rem;">
+              Location is everything in retail commerce. Our commercial retail portfolio showcases spaces configured with wide street frontage, multi-tier glazing, customer parking, and dedicated MEP utilities for food &amp; beverage and luxury lifestyle brands.
+            </p>
+            <p style="color: var(--color-muted); margin-bottom: 1.5rem;">
+              Whether opening a flagship fashion store, a culinary dining concept, or an automotive customer experience center, explore spaces engineered for maximum commercial conversion.
+            </p>
+            <a href="#retailListings" class="btn btn-navy">View Retail Listings</a>
+          </div>
+          <div>
+            <div class="property-image-placeholder has-image" style="border-radius: var(--radius-lg); aspect-ratio: 4/3; box-shadow: var(--shadow-md);">
+              <img src="assets/images/Commercial_shopping_arcade_atriu._c095872a.jpg" alt="Commercial Shopping Arcade" class="property-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Retail Segments: Retail Shops, High-street, Shopping Complex, Showrooms, Restaurant Spaces -->
+    <section class="section section-bg-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Diverse Retail Formats</span>
+          <h2 class="section-title">Retail Formats Built for Every Consumer Brand</h2>
+          <p class="section-desc">From ground-level corner boutiques to expansive multi-level vehicular showrooms.</p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <div class="feature-box">
+            <div class="feature-icon">🏪</div>
+            <h3 class="feature-title">High-Street Retail Shops</h3>
+            <p class="feature-desc">Prime ground-floor units situated on vibrant pedestrian thoroughfares with high consumer traffic throughout the day.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">🏬</div>
+            <h3 class="feature-title">Shopping Complex Units</h3>
+            <p class="feature-desc">Anchor stores and inline retail outlets located in climate-controlled shopping malls with shared entertainment &amp; cinema footfall.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">🚗</div>
+            <h3 class="feature-title">Commercial Showrooms</h3>
+            <p class="feature-desc">Expansive floorplates with high ceilings, customer delivery ramps, and wide glass frontages ideal for automobiles and electronics.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">🍽️</div>
+            <h3 class="feature-title">Restaurant &amp; F&amp;B Spaces</h3>
+            <p class="feature-desc">Fitted with heavy grease traps, vertical exhaust riser ducts, natural gas lines, and high-capacity electrical supply.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">💎</div>
+            <h3 class="feature-title">Luxury Boutique Outlets</h3>
+            <p class="feature-desc">Sophisticated retail suites in high-net-worth neighborhood arcades and premier 5-star hotel shopping corridors.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">📦</div>
+            <h3 class="feature-title">Dark Stores &amp; Quick-Commerce</h3>
+            <p class="feature-desc">In-city micro-fulfillment distribution hubs designed for 10-minute delivery dispatch and two-wheeler parking fleets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Retail Listings -->
+    <section id="retailListings" class="section section-bg-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Sample Demo Catalog</span>
+          <h2 class="section-title">Featured Retail Properties</h2>
+          <p class="section-desc">Explore sample retail properties with demo specifications and financial indicators.</p>
+        </div>
+
+        <div class="grid grid-cols-2">
+          <!-- Retail 1 -->
+          <article class="property-card">
+            <div class="card-image-wrap">
+              <div class="card-badges">
+                <span class="badge badge-rent">For Lease</span>
+                <span class="badge badge-demo">Demo</span>
+              </div>
+              <div class="property-image-placeholder has-image">
+                <img src="assets/images/Shoppers_walking_past_retail_sto._a1f7f7ee.jpg" alt="High-Street Corner Retail Shop" class="property-image">
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-category-tag">Retail &amp; Showrooms</div>
+              <h3 class="card-title"><a href="property-details.html?id=CP-102">High-Street Corner Retail Shop</a></h3>
+              <p class="card-location">📍 Metro Avenue Commercial Hub, Demo Zone 02</p>
+              <div class="card-specs-row">
+                <div class="spec-item"><span class="spec-label">Area</span><span class="spec-val">2,800 sq.ft.</span></div>
+                <div class="spec-item"><span class="spec-label">Frontage</span><span class="spec-val">45 Ft Glass</span></div>
+                <div class="spec-item"><span class="spec-label">Position</span><span class="spec-val">Ground Corner</span></div>
+              </div>
+              <div class="card-footer">
+                <div class="card-price-wrap">
+                  <span class="card-price-label">Sample Lease</span>
+                  <span class="card-price-val">₹2,80,000 / mo</span>
+                </div>
+                <div class="card-actions">
+                  <a href="property-details.html?id=CP-102" class="btn btn-outline btn-sm">Details</a>
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiryModal('High-Street Corner Retail Shop')">Enquire</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Retail 2 -->
+          <article class="property-card">
+            <div class="card-image-wrap">
+              <div class="card-badges">
+                <span class="badge badge-buy">For Sale</span>
+                <span class="badge badge-demo">Demo</span>
+              </div>
+              <div class="property-image-placeholder has-image">
+                <img src="assets/images/Automobile_showroom_along_expres._092dab8f.jpg" alt="Automobile & Lifestyle Showroom" class="property-image">
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-category-tag">Retail &amp; Showrooms</div>
+              <h3 class="card-title"><a href="property-details.html?id=CP-106">Automobile &amp; Lifestyle Showroom</a></h3>
+              <p class="card-location">📍 Main Highway Expressway, Demo Sector 12</p>
+              <div class="card-specs-row">
+                <div class="spec-item"><span class="spec-label">Area</span><span class="spec-val">11,500 sq.ft.</span></div>
+                <div class="spec-item"><span class="spec-label">Frontage</span><span class="spec-val">90 Ft Roadside</span></div>
+                <div class="spec-item"><span class="spec-label">Height</span><span class="spec-val">6.5m Eaves</span></div>
+              </div>
+              <div class="card-footer">
+                <div class="card-price-wrap">
+                  <span class="card-price-label">Sample Price</span>
+                  <span class="card-price-val">₹14.5 Cr</span>
+                </div>
+                <div class="card-actions">
+                  <a href="property-details.html?id=CP-106" class="btn btn-outline btn-sm">Details</a>
+                  <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiryModal('Automobile Showroom')">Enquire</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Retail Property Benefits -->
+    <section class="section section-bg-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Strategic Value</span>
+          <h2 class="section-title">Retail Property Key Commercial Benefits</h2>
+          <p class="section-desc">Technical attributes that enhance customer dwell time and retail revenues.</p>
+        </div>
+
+        <div class="grid grid-cols-4">
+          <div class="feature-box text-center">
+            <div class="feature-icon">👁️</div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Visual Prominence</h4>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">High-contrast signage zones and glass facades unobstructed by foliage or pillars.</p>
+          </div>
+          <div class="feature-box text-center">
+            <div class="feature-icon">🚶</div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Organic Foot Traffic</h4>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">Direct adjacency to metro gates, office clusters, and dense residential catchments.</p>
+          </div>
+          <div class="feature-box text-center">
+            <div class="feature-icon">⚡</div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">High Power Loads</h4>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">Dedicated 3-phase transformers supporting high-intensity retail illumination and HVAC.</p>
+          </div>
+          <div class="feature-box text-center">
+            <div class="feature-icon">🅿️</div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Customer Parking</h4>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">Dedicated valet drop zones and basement parking avoiding street congestion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Retail CTA -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Looking for Retail Spaces or High-Street Corner Locations?</h2>
+          <p>Share your target demographic, preferred frontage dimensions, and brand specifications.</p>
+          <button type="button" class="btn btn-primary" onclick="openEnquiryModal('Retail Location Requirement')">Submit Retail Requirement</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>COMMERCIAL PROPERTIES</h3>
+        <p>A professional commercial real estate listing showcase demonstrating offices, retail shops, standalone buildings, and modern logistics assets.</p>
+        <span class="badge badge-demo">Frontend Demonstration Portal</span>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Portal</a></li>
+          <li><a href="properties.html">All Properties</a></li>
+          <li><a href="investment.html">Investment Overview</a></li>
+          <li><a href="blog.html">Commercial Insights</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Property Sectors</h4>
+        <ul class="footer-links">
+          <li><a href="office-spaces.html">Commercial Offices</a></li>
+          <li><a href="retail.html">Retail &amp; Showrooms</a></li>
+          <li><a href="industrial.html">Warehouses &amp; Logistics</a></li>
+          <li><a href="properties.html?category=commercial-building">Commercial Plazas</a></li>
+          <li><a href="properties.html?purpose=rent">Leasing Solutions</a></li>
+          <li><a href="properties.html?purpose=buy">Outright Purchases</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Demo Contact</h4>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <span>Demo Commercial Property Office, Demo City, India</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>📞</span>
+          <span>+91 90000 00000</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>✉️</span>
+          <span>demo@example.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>🕒</span>
+          <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Commercial Properties. Generic demo showcase. All content, prices, and assets are sample data.</p>
+      <div class="footer-bottom-links">
+        <a href="about.html">Privacy Policy (Demo)</a>
+        <a href="about.html">Terms &amp; Conditions (Demo)</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="enquiryModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Retail Space Enquiry</h3>
+      <p style="color: var(--color-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Demo enquiry form. No data is stored.</p>
+      <div id="modalSuccessAlert" class="form-alert alert-success">✓ Enquiry validated successfully.</div>
+      <form id="modalEnquiryForm">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label">Full Name *</label>
+          <input type="text" name="fullName" class="form-control" placeholder="John Doe">
+          <span class="form-feedback"></span>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" name="email" class="form-control" placeholder="name@business.com">
+            <span class="form-feedback"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" name="phone" class="form-control" placeholder="10-digit number">
+            <span class="form-feedback"></span>
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label">Property Interest</label>
+          <input type="text" id="modalPropertyInterest" name="propertyInterest" class="form-control" value="Retail Shop">
+        </div>
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label class="form-label">Message</label>
+          <textarea name="message" class="form-control" rows="3" placeholder="Commercial requirement details..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-navy btn-block">Submit Demo Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

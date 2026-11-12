@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMMERCIAL PROPERTIES | Find the Right Space for Your Business</title>
+  <meta name="description" content="Discover premium commercial real estate demo listings including office spaces, retail shops, commercial buildings, warehouses, and industrial spaces.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-logo">
+        COMMERCIAL <span>PROPERTIES</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="properties.html" class="nav-link">Properties</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link" aria-haspopup="true">Categories ▾</a>
+          <div class="dropdown-menu">
+            <a href="office-spaces.html" class="dropdown-item">Office Spaces</a>
+            <a href="retail.html" class="dropdown-item">Retail &amp; Showrooms</a>
+            <a href="industrial.html" class="dropdown-item">Warehouses &amp; Industrial</a>
+          </div>
+        </div>
+        <a href="investment.html" class="nav-link">Investment</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiryModal('General Inquiry')">Enquire Now</button>
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="properties.html" class="mobile-nav-link">All Properties</a>
+      <a href="office-spaces.html" class="mobile-nav-link">Office Spaces</a>
+      <a href="retail.html" class="mobile-nav-link">Retail &amp; Showrooms</a>
+      <a href="industrial.html" class="mobile-nav-link">Warehouses &amp; Industrial</a>
+      <a href="investment.html" class="mobile-nav-link">Investment Guide</a>
+      <a href="blog.html" class="mobile-nav-link">Commercial Insights Blog</a>
+      <a href="contact.html" class="mobile-nav-link">Contact &amp; Enquiry</a>
+      <button type="button" class="btn btn-primary btn-block" style="margin-top: 1.5rem;" onclick="openEnquiryModal('Mobile Inquiry')">Enquire Now</button>
+    </nav>
+  </aside>
+
+  <main>
+    <!-- Page 1: Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="hero-pill">Commercial Real Estate Demo Portal</span>
+        <h1 class="hero-title">Find the Right Space for Your Business</h1>
+        <p class="hero-subtitle">
+          Explore curated corporate office towers, prime high-street retail shops, modern logistics warehouses, and strategic business centers designed for forward-thinking enterprises.
+        </p>
+      </div>
+    </section>
+
+    <!-- Search Interface Section -->
+    <section class="search-widget-container container">
+      <div class="search-widget">
+        <div class="search-widget-tabs">
+          <button type="button" class="search-tab-btn active" data-purpose="rent">Lease / Rent</button>
+          <button type="button" class="search-tab-btn" data-purpose="buy">Purchase / Buy</button>
+        </div>
+
+        <form id="heroSearchForm" class="search-form-grid">
+          <div class="form-group">
+            <label class="form-label" for="heroCategory">Property Category</label>
+            <select id="heroCategory" class="form-control">
+              <option value="all">All Categories</option>
+              <option value="office">Office Spaces</option>
+              <option value="retail">Retail &amp; Showrooms</option>
+              <option value="industrial">Warehouses &amp; Industrial</option>
+              <option value="commercial-building">Commercial Buildings</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="heroLocation">Demo Location / Zone</label>
+            <input type="text" id="heroLocation" class="form-control" placeholder="e.g. CBD, Cyber Gateway, Demo Zone">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="heroMinBudget">Min Budget (₹)</label>
+            <input type="number" id="heroMinBudget" class="form-control" placeholder="Min Amount">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="heroMaxBudget">Max Budget (₹)</label>
+            <input type="number" id="heroMaxBudget" class="form-control" placeholder="Max Amount">
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-navy" style="height: 48px; width: 100%;">Search Properties</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Property Category Highlights -->
+    <section class="section section-bg-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Commercial Sectors</span>
+          <h2 class="section-title">Explore by Property Category</h2>
+          <p class="section-desc">
+            Whether establishing a regional headquarters or acquiring an industrial distribution center, browse purpose-built commercial assets tailored to your industry.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-4">
+          <a href="office-spaces.html" class="category-card">
+            <div class="category-icon-wrapper">🏢</div>
+            <h3 class="category-title">Office Spaces</h3>
+            <p class="category-count">Grade-A Towers, IT Parks &amp; Suites</p>
+          </a>
+
+          <a href="retail.html" class="category-card">
+            <div class="category-icon-wrapper">🛍️</div>
+            <h3 class="category-title">Retail &amp; Showrooms</h3>
+            <p class="category-count">High-Street Shops &amp; Prime Corners</p>
+          </a>
+
+          <a href="industrial.html" class="category-card">
+            <div class="category-icon-wrapper">🏭</div>
+            <h3 class="category-title">Warehouses &amp; Logistics</h3>
+            <p class="category-count">Heavy Storage, FMCG &amp; Distribution</p>
+          </a>
+
+          <a href="properties.html?category=commercial-building" class="category-card">
+            <div class="category-icon-wrapper">🏛️</div>
+            <h3 class="category-title">Commercial Buildings</h3>
+            <p class="category-count">Full Independent Institutional Plazas</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Commercial Properties Showcase -->
+    <section class="section section-bg-white">
+      <div class="container">
+        <div class="flex-between items-center" style="margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="section-subtitle">Demo Portfolio</span>
+            <h2 class="section-title" style="margin-bottom: 0;">Featured Commercial Properties</h2>
+          </div>
+          <a href="properties.html" class="btn btn-outline btn-sm">View All 8 Demo Listings →</a>
+        </div>
+
+        <!-- Populated via script.js -->
+        <div id="homePropertiesGrid" class="grid grid-cols-3">
+          <!-- Fallback or dynamic content -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Office Spaces Showcase Spotlight -->
+    <section class="section section-bg-light">
+      <div class="container">
+        <div class="grid grid-cols-2 items-center gap-4">
+          <div>
+            <span class="section-subtitle">Corporate Solutions</span>
+            <h2 class="section-title">Modern Workspaces Built for Productivity</h2>
+            <p class="section-desc" style="margin-bottom: 1.5rem;">
+              Grade-A corporate office parks offering column-free floor layouts, advanced BMS infrastructure, high-speed vertical transportation, and multi-tier physical security.
+            </p>
+            <ul style="margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.95rem;">
+              <li>✔️ <strong>High Efficiency Floorplates:</strong> Optimized core-to-perimeter depths for maximum natural light.</li>
+              <li>✔️ <strong>100% Power Redundancy:</strong> N+1 backup generators and dual power substation inputs.</li>
+              <li>✔️ <strong>ESG Compliance:</strong> Energy-efficient HVAC, water conservation, and green building specs.</li>
+            </ul>
+            <a href="office-spaces.html" class="btn btn-navy">Explore Office Spaces</a>
+          </div>
+          <div>
+            <div class="property-image-placeholder has-image" style="border-radius: var(--radius-lg); aspect-ratio: 4/3; box-shadow: var(--shadow-md);">
+              <img src="assets/images/office-01.jpg" alt="Grade-A Commercial Office Tower" class="property-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Retail Spaces Showcase Spotlight -->
+    <section class="section section-bg-white">
+      <div class="container">
+        <div class="grid grid-cols-2 items-center gap-4">
+          <div style="order: 2;">
+            <span class="section-subtitle">Consumer Footfall</span>
+            <h2 class="section-title">Prime Retail Frontage &amp; Showrooms</h2>
+            <p class="section-desc" style="margin-bottom: 1.5rem;">
+              Capture commanding footfall with high-visibility retail locations situated at focal metro intersections, pedestrian plazas, and affluent commercial corridors.
+            </p>
+            <ul style="margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.95rem;">
+              <li>✔️ <strong>Expansive Road Visibility:</strong> Double-height glass storefronts for maximum brand exposure.</li>
+              <li>✔️ <strong>Heavy Vehicle Footfall:</strong> Dedicated customer drop-off lanes and ample valet staging.</li>
+              <li>✔️ <strong>F&amp;B Provisions:</strong> Dedicated grease traps, exhaust shafts, and heavy water supply.</li>
+            </ul>
+            <a href="retail.html" class="btn btn-navy">Explore Retail Spaces</a>
+          </div>
+          <div style="order: 1;">
+            <div class="property-image-placeholder has-image" style="border-radius: var(--radius-lg); aspect-ratio: 4/3; box-shadow: var(--shadow-md);">
+              <img src="assets/images/Shoppers_walking_past_retail_sto._a1f7f7ee.jpg" alt="Prime Retail Frontage" class="property-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Warehouses and Industrial Properties Section -->
+    <section class="section section-bg-light">
+      <div class="container">
+        <div class="grid grid-cols-2 items-center gap-4">
+          <div>
+            <span class="section-subtitle">Supply Chain Infrastructure</span>
+            <h2 class="section-title">Engineered Logistics Hubs &amp; Industrial Sheds</h2>
+            <p class="section-desc" style="margin-bottom: 1.5rem;">
+              Strategic distribution facilities connecting national arterial highways, rail freight corridors, and major ports with heavy-duty loading bays.
+            </p>
+            <ul style="margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.95rem;">
+              <li>✔️ <strong>High Clear Heights:</strong> 10m to 14m vertical clearance for automated racking systems.</li>
+              <li>✔️ <strong>Heavy Floor Bearing:</strong> Laser-screed FM2 grade concrete floor with 5–8 Ton/sq.m capacity.</li>
+              <li>✔️ <strong>Truck Turnaround:</strong> 40m apron space accommodating multi-axle freight trailers.</li>
+            </ul>
+            <a href="industrial.html" class="btn btn-navy">Explore Warehouses &amp; Industrial</a>
+          </div>
+          <div>
+            <div class="property-image-placeholder has-image" style="border-radius: var(--radius-lg); aspect-ratio: 4/3; box-shadow: var(--shadow-md);">
+              <img src="assets/images/Warehouse_loading_docks_and_trai._601b4b94.jpg" alt="Modern Logistics Hubs & Warehouses" class="property-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Commercial Properties Section -->
+    <section class="section section-bg-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Platform Advantages</span>
+          <h2 class="section-title">Why Commercial Real Estate Decision-Makers Choose Us</h2>
+          <p class="section-desc">
+            A structured, transparent demo interface designed to simulate comprehensive technical due diligence and commercial property discovery.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <div class="feature-box">
+            <div class="feature-icon">📑</div>
+            <h3 class="feature-title">Verified Specifications</h3>
+            <p class="feature-desc">Clear floorplate measurements, structural load specifications, ceiling clearance, and zoning classifications presented transparently.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">🗺️</div>
+            <h3 class="feature-title">Strategic Location Context</h3>
+            <p class="feature-desc">Comprehensive analysis of arterial road connectivity, proximity to mass transit corridors, and micro-market accessibility.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">🤝</div>
+            <h3 class="feature-title">Direct Transaction Advisory</h3>
+            <p class="feature-desc">Streamlined demo enquiry flow facilitating structured negotiations between commercial tenants and property asset owners.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Location Advantages -->
+    <section class="section section-bg-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Connectivity Matters</span>
+          <h2 class="section-title">Strategic Business Location Advantages</h2>
+          <p class="section-desc">Commercial assets curated around mission-critical urban and industrial infrastructure hubs.</p>
+        </div>
+
+        <div class="grid grid-cols-4">
+          <div class="feature-box text-center">
+            <div class="feature-icon" style="font-size: 2rem;">🚇</div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Metro Proximity</h3>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">Within walkability to mass rapid transit stops for employee commuting ease.</p>
+          </div>
+
+          <div class="feature-box text-center">
+            <div class="feature-icon" style="font-size: 2rem;">✈️</div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Airport Corridor</h3>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">Rapid expressway access to domestic and international cargo air terminals.</p>
+          </div>
+
+          <div class="feature-box text-center">
+            <div class="feature-icon" style="font-size: 2rem;">🛣️</div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Expressway Arterials</h3>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">Unrestricted access to national arterial highways for heavy logistics.</p>
+          </div>
+
+          <div class="feature-box text-center">
+            <div class="feature-icon" style="font-size: 2rem;">🏙️</div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Civic Ecosystem</h3>
+            <p style="font-size: 0.85rem; color: var(--color-muted);">Proximity to financial banking institutes, premium hotels, and executive dining.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="section section-bg-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Assistance &amp; Guidance</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Common technical and commercial questions regarding leasing and purchasing commercial property.</p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span>What is the difference between warm-shell and fully furnished office space?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              A warm-shell commercial space typically includes central air-conditioning ducting, fire safety sprinklers, screeded flooring, and basic electrical distribution boards. A fully furnished (plug-and-play) office includes modular workstations, conference rooms, executive cabins, IT cabling, and office furniture.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span>Are all property values and locations shown on this website real?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              No. This website is a frontend commercial real estate demonstration portal. All property titles, descriptions, pricing figures, and addresses are generic sample data meant for layout and workflow demonstration purposes only.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span>How are commercial lease terms typically structured?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              Standard commercial real estate leases generally follow a 3+3+3 or 5+5 year format with predetermined escalation clauses (typically 12% to 15% every 3 years) alongside lock-in periods negotiated between landlord and corporate tenant.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span>Can I schedule a site visit through this demo platform?</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-body">
+              You can trigger the enquiry form or modal to test the user interface. As this is a frontend demonstration without backend storage, your form submissions trigger realistic validation and success alerts locally in your browser.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Call-to-Action Banner -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Ready to Expand or Relocate Your Commercial Footprint?</h2>
+          <p>
+            Connect with commercial property specialists to discuss floorplate specifications, build-to-suit requirements, or asset acquisition parameters.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <button type="button" class="btn btn-primary" onclick="openEnquiryModal('General Consultation')">Submit Commercial Requirement</button>
+            <a href="contact.html" class="btn btn-outline-white">View Contact Information</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>COMMERCIAL PROPERTIES</h3>
+        <p>A professional commercial real estate listing showcase demonstrating offices, retail shops, standalone buildings, and modern logistics assets.</p>
+        <span class="badge badge-demo">Frontend Demonstration Portal</span>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Portal</a></li>
+          <li><a href="properties.html">All Properties</a></li>
+          <li><a href="investment.html">Investment Overview</a></li>
+          <li><a href="blog.html">Commercial Insights</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Property Sectors</h4>
+        <ul class="footer-links">
+          <li><a href="office-spaces.html">Commercial Offices</a></li>
+          <li><a href="retail.html">Retail &amp; Showrooms</a></li>
+          <li><a href="industrial.html">Warehouses &amp; Logistics</a></li>
+          <li><a href="properties.html?category=commercial-building">Commercial Plazas</a></li>
+          <li><a href="properties.html?purpose=rent">Leasing Solutions</a></li>
+          <li><a href="properties.html?purpose=buy">Outright Purchases</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Demo Contact</h4>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <span>Demo Commercial Property Office, Demo City, India</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>📞</span>
+          <span>+91 90000 00000</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>✉️</span>
+          <span>demo@example.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>🕒</span>
+          <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Commercial Properties. Generic demo showcase. All content, prices, and assets are sample data.</p>
+      <div class="footer-bottom-links">
+        <a href="about.html">Privacy Policy (Demo)</a>
+        <a href="about.html">Terms &amp; Conditions (Demo)</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reusable Enquiry Modal -->
+  <div id="enquiryModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 id="modalTitle" style="font-size: 1.5rem; margin-bottom: 0.5rem;">Property Enquiry</h3>
+      <p style="color: var(--color-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">
+        Fill out this demo enquiry form. No personal information is stored or transmitted.
+      </p>
+
+      <div id="modalSuccessAlert" class="form-alert alert-success">
+        ✓ Thank you! Your demo enquiry has been validated successfully.
+      </div>
+
+      <form id="modalEnquiryForm">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modalFullName">Full Name *</label>
+          <input type="text" id="modalFullName" name="fullName" class="form-control" placeholder="John Doe">
+          <span class="form-feedback"></span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="modalEmail">Email Address *</label>
+            <input type="email" id="modalEmail" name="email" class="form-control" placeholder="name@business.com">
+            <span class="form-feedback"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalPhone">Phone Number *</label>
+            <input type="tel" id="modalPhone" name="phone" class="form-control" placeholder="10-digit number">
+            <span class="form-feedback"></span>
+          </div>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label" for="modalPropertyInterest">Property of Interest</label>
+          <input type="text" id="modalPropertyInterest" name="propertyInterest" class="form-control" value="Commercial Real Estate Space">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label class="form-label" for="modalMessage">Commercial Space Requirements</label>
+          <textarea id="modalMessage" name="message" class="form-control" rows="3" placeholder="Approximate area required, preferred timeline, budget..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-navy btn-block">Submit Demo Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

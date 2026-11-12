@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Details | COMMERCIAL PROPERTIES</title>
+  <meta name="description" content="View detailed technical specifications, floorplans, parking ratios, and amenities for commercial real estate properties.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-logo">
+        COMMERCIAL <span>PROPERTIES</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="properties.html" class="nav-link active">Properties</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link" aria-haspopup="true">Categories ▾</a>
+          <div class="dropdown-menu">
+            <a href="office-spaces.html" class="dropdown-item">Office Spaces</a>
+            <a href="retail.html" class="dropdown-item">Retail &amp; Showrooms</a>
+            <a href="industrial.html" class="dropdown-item">Warehouses &amp; Industrial</a>
+          </div>
+        </div>
+        <a href="investment.html" class="nav-link">Investment</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary btn-sm" onclick="openEnquiryModal('Specific Property Inquiry')">Enquire Now</button>
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="properties.html" class="mobile-nav-link active">All Properties</a>
+      <a href="office-spaces.html" class="mobile-nav-link">Office Spaces</a>
+      <a href="retail.html" class="mobile-nav-link">Retail &amp; Showrooms</a>
+      <a href="industrial.html" class="mobile-nav-link">Warehouses &amp; Industrial</a>
+      <a href="investment.html" class="mobile-nav-link">Investment Guide</a>
+      <a href="blog.html" class="mobile-nav-link">Commercial Insights Blog</a>
+      <a href="contact.html" class="mobile-nav-link">Contact &amp; Enquiry</a>
+    </nav>
+  </aside>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="properties.html">Properties</a>
+      <span class="breadcrumb-separator">/</span>
+      <span id="detailBreadcrumbTitle">Grade-A Corporate Tower Floor</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="section section-bg-light">
+      <div class="container">
+        <!-- Top Title Bar -->
+        <div class="flex-between items-center" style="margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <span id="detailBadge" class="badge badge-rent">For Lease / Rent</span>
+              <span class="badge badge-demo">Sample Demo Listing</span>
+            </div>
+            <h1 id="detailTitle" style="font-size: 2.25rem;">Grade-A Corporate Tower Floor</h1>
+            <p id="detailLocation" style="color: var(--color-muted); font-size: 1rem;">📍 Central Business District, Demo Zone 01</p>
+          </div>
+
+          <div style="text-align: right;">
+            <div style="font-size: 0.8rem; color: var(--color-muted); text-transform: uppercase;">Sample Commercial Rate</div>
+            <div id="detailPrice" style="font-size: 2.2rem; font-weight: 800; color: var(--color-primary);">₹4,20,000 / mo</div>
+          </div>
+        </div>
+
+        <!-- Details Grid Layout -->
+        <div class="property-details-layout">
+          <!-- Main Content Column -->
+          <div>
+            <!-- Gallery Box -->
+            <div style="margin-bottom: 2rem;">
+              <div id="propertyGalleryMain" class="property-gallery-placeholder">
+                <img id="galleryMainImageTag" src="assets/images/office-01.jpg" alt="Commercial Property View" class="gallery-main-img">
+              </div>
+
+              <!-- Thumbnails row -->
+              <div class="grid grid-cols-4 gap-2" style="margin-top: 1rem;">
+                <div class="gallery-thumb-placeholder active" data-img="assets/images/office-01.jpg">
+                  <img src="assets/images/office-01.jpg" alt="Facade View" class="gallery-thumb-img">
+                </div>
+                <div class="gallery-thumb-placeholder" data-img="assets/images/office-02.jpg">
+                  <img src="assets/images/office-02.jpg" alt="Workstation Floorplate" class="gallery-thumb-img">
+                </div>
+                <div class="gallery-thumb-placeholder" data-img="assets/images/office-03.jpg">
+                  <img src="assets/images/office-03.jpg" alt="Executive Boardroom" class="gallery-thumb-img">
+                </div>
+                <div class="gallery-thumb-placeholder" data-img="assets/images/Commercial_district_twilight_dro._8659e175.jpg">
+                  <img src="assets/images/Commercial_district_twilight_dro._8659e175.jpg" alt="Commercial District Drone View" class="gallery-thumb-img">
+                </div>
+              </div>
+            </div>
+
+            <!-- Property Overview -->
+            <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 2.5rem; border: 1px solid var(--color-border); margin-bottom: 2rem;">
+              <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Property Overview</h2>
+              <p id="detailDescription" style="color: #475569; font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem;">
+                This Grade-A commercial workspace is engineered for multinational corporations, technology development firms, and financial organizations seeking high-efficiency spatial configurations. Situated within a premier corporate campus, the property features panoramic multi-directional daylighting, acoustic insulation, and high-capacity vertical transit.
+              </p>
+              <div style="background: var(--color-light-bg); border-left: 4px solid var(--color-accent); padding: 1rem 1.25rem; font-size: 0.9rem;">
+                <strong>Demo Content Notice:</strong> All details, measurements, and structural references displayed are purely generic mock specifications for presentation purposes.
+              </div>
+            </div>
+
+            <!-- Technical Specifications Grid -->
+            <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 2.5rem; border: 1px solid var(--color-border); margin-bottom: 2rem;">
+              <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Commercial Specifications</h2>
+              <div class="spec-grid">
+                <div class="spec-box">
+                  <div class="spec-box-label">Total Built-Up Area</div>
+                  <div id="specArea" class="spec-box-value">6,500 sq.ft.</div>
+                </div>
+                <div class="spec-box">
+                  <div class="spec-box-label">Floor Position</div>
+                  <div id="specFloor" class="spec-box-value">14th Floor (Out of 28)</div>
+                </div>
+                <div class="spec-box">
+                  <div class="spec-box-label">Furnishing Status</div>
+                  <div id="specFurnishing" class="spec-box-value">Fully Furnished Plug &amp; Play</div>
+                </div>
+                <div class="spec-box">
+                  <div class="spec-box-label">Reserved Parking</div>
+                  <div id="specParking" class="spec-box-value">6 Dedicated Stacks</div>
+                </div>
+                <div class="spec-box">
+                  <div class="spec-box-label">Power Backup</div>
+                  <div id="specPower" class="spec-box-value">100% N+1 DG Redundancy</div>
+                </div>
+                <div class="spec-box">
+                  <div class="spec-box-label">Air Conditioning</div>
+                  <div id="specAC" class="spec-box-value">Central Chilled Water VAV</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Facilities & Amenities -->
+            <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 2.5rem; border: 1px solid var(--color-border); margin-bottom: 2rem;">
+              <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Facilities &amp; Infrastructure</h2>
+              <div class="grid grid-cols-2 gap-3">
+                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                  <span style="color: var(--color-success); font-weight: bold;">✔</span>
+                  <span>High-speed destination-controlled passenger elevators</span>
+                </div>
+                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                  <span style="color: var(--color-success); font-weight: bold;">✔</span>
+                  <span>NFPA compliant fire alarm and wet sprinkler system</span>
+                </div>
+                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                  <span style="color: var(--color-success); font-weight: bold;">✔</span>
+                  <span>24x7 Multi-tier physical security and CCTV surveillance</span>
+                </div>
+                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                  <span style="color: var(--color-success); font-weight: bold;">✔</span>
+                  <span>Fiber-optic broadband connectivity from multiple ISPs</span>
+                </div>
+                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                  <span style="color: var(--color-success); font-weight: bold;">✔</span>
+                  <span>Dedicated service / goods elevator with loading dock</span>
+                </div>
+                <div style="display: flex; gap: 0.75rem; align-items: center;">
+                  <span style="color: var(--color-success); font-weight: bold;">✔</span>
+                  <span>On-campus executive cafeteria and business lounge</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Advantages -->
+            <div style="background: #FFFFFF; border-radius: var(--radius-lg); padding: 2.5rem; border: 1px solid var(--color-border);">
+              <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Location &amp; Commute Advantages</h2>
+              <ul style="display: flex; flex-direction: column; gap: 1rem; color: #475569;">
+                <li>🚇 <strong>Metro Station:</strong> 400 meters walking distance to Central Business Metro Station.</li>
+                <li>✈️ <strong>International Airport:</strong> 25 minutes via non-stop elevated express highway.</li>
+                <li>🏨 <strong>Hospitality &amp; Dining:</strong> Walking distance to 5-star executive business hotels and convention centers.</li>
+                <li>🏦 <strong>Banking Corridor:</strong> Surrounded by premier commercial banks and institutional headquarters.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Sticky Sidebar Form -->
+          <div class="details-sidebar-sticky">
+            <div class="form-card">
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Enquire About This Space</h3>
+              <p style="color: var(--color-muted); font-size: 0.875rem; margin-bottom: 1.5rem;">
+                Schedule a private walkthrough or request lease terms.
+              </p>
+
+              <div class="form-alert alert-success">
+                ✓ Thank you! Your property inquiry has been recorded.
+              </div>
+
+              <form class="validate-form">
+                <div class="form-group" style="margin-bottom: 1rem;">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" name="fullName" class="form-control" placeholder="John Doe">
+                  <span class="form-feedback"></span>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1rem;">
+                  <label class="form-label">Work Email *</label>
+                  <input type="email" name="email" class="form-control" placeholder="name@company.com">
+                  <span class="form-feedback"></span>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1rem;">
+                  <label class="form-label">Phone Number *</label>
+                  <input type="tel" name="phone" class="form-control" placeholder="10-digit mobile number">
+                  <span class="form-feedback"></span>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.25rem;">
+                  <label class="form-label">Requirements Note *</label>
+                  <textarea name="message" class="form-control" rows="3" placeholder="Expected move-in timeframe, headcount, or fit-out preferences..."></textarea>
+                  <span class="form-feedback"></span>
+                </div>
+
+                <button type="submit" class="btn btn-navy btn-block">Send Property Enquiry</button>
+                <p style="font-size: 0.75rem; color: var(--color-muted); text-align: center; margin-top: 1rem;">
+                  Frontend demo: Submissions validate without backend persistence.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Similar Commercial Properties -->
+    <section class="section section-bg-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Related Listings</span>
+          <h2 class="section-title">Similar Commercial Spaces</h2>
+          <p class="section-desc">Alternative commercial spaces in comparable micro-markets.</p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <!-- Card 1 -->
+          <article class="property-card">
+            <div class="card-image-wrap">
+              <div class="card-badges">
+                <span class="badge badge-rent">For Lease</span>
+                <span class="badge badge-demo">Demo</span>
+              </div>
+              <div class="property-image-placeholder has-image">
+                <img src="assets/images/office-02.jpg" alt="Co-Working Space" class="property-image">
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-category-tag">Office Space</div>
+              <h3 class="card-title"><a href="property-details.html?id=CP-105">Boutique Tech Co-Working Space</a></h3>
+              <p class="card-location">📍 Cyber Gateway Boulevard, Demo Hub 05</p>
+              <div class="card-footer">
+                <div class="card-price-wrap">
+                  <span class="card-price-label">Sample Lease</span>
+                  <span class="card-price-val">₹2,60,000 / mo</span>
+                </div>
+                <a href="property-details.html?id=CP-105" class="btn btn-outline btn-sm">View Space</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="property-card">
+            <div class="card-image-wrap">
+              <div class="card-badges">
+                <span class="badge badge-rent">For Lease</span>
+                <span class="badge badge-demo">Demo</span>
+              </div>
+              <div class="property-image-placeholder has-image">
+                <img src="assets/images/office-03.jpg" alt="Business Center Suite" class="property-image">
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-category-tag">Office Space</div>
+              <h3 class="card-title"><a href="property-details.html?id=CP-108">Executive Business Center Suite</a></h3>
+              <p class="card-location">📍 Financial District North, Demo Zone 03</p>
+              <div class="card-footer">
+                <div class="card-price-wrap">
+                  <span class="card-price-label">Sample Lease</span>
+                  <span class="card-price-val">₹1,45,000 / mo</span>
+                </div>
+                <a href="property-details.html?id=CP-108" class="btn btn-outline btn-sm">View Space</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="property-card">
+            <div class="card-image-wrap">
+              <div class="card-badges">
+                <span class="badge badge-buy">For Sale</span>
+                <span class="badge badge-demo">Demo</span>
+              </div>
+              <div class="property-image-placeholder has-image">
+                <img src="assets/images/COMMERCIAL_PROPERTIES_b782fce8.jpg" alt="Commercial Multi-Story Plaza Building" class="property-image">
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-category-tag">Commercial Buildings</div>
+              <h3 class="card-title"><a href="property-details.html?id=CP-104">Commercial Multi-Story Plaza Building</a></h3>
+              <p class="card-location">📍 Ring Road Commercial Belt, Demo Zone 04</p>
+              <div class="card-footer">
+                <div class="card-price-wrap">
+                  <span class="card-price-label">Sample Price</span>
+                  <span class="card-price-val">₹35.0 Cr</span>
+                </div>
+                <a href="property-details.html?id=CP-104" class="btn btn-outline btn-sm">View Space</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>COMMERCIAL PROPERTIES</h3>
+        <p>A professional commercial real estate listing showcase demonstrating offices, retail shops, standalone buildings, and modern logistics assets.</p>
+        <span class="badge badge-demo">Frontend Demonstration Portal</span>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Portal</a></li>
+          <li><a href="properties.html">All Properties</a></li>
+          <li><a href="investment.html">Investment Overview</a></li>
+          <li><a href="blog.html">Commercial Insights</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Property Sectors</h4>
+        <ul class="footer-links">
+          <li><a href="office-spaces.html">Commercial Offices</a></li>
+          <li><a href="retail.html">Retail &amp; Showrooms</a></li>
+          <li><a href="industrial.html">Warehouses &amp; Logistics</a></li>
+          <li><a href="properties.html?category=commercial-building">Commercial Plazas</a></li>
+          <li><a href="properties.html?purpose=rent">Leasing Solutions</a></li>
+          <li><a href="properties.html?purpose=buy">Outright Purchases</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Demo Contact</h4>
+        <div class="footer-contact-item">
+          <span>📍</span>
+          <span>Demo Commercial Property Office, Demo City, India</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>📞</span>
+          <span>+91 90000 00000</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>✉️</span>
+          <span>demo@example.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <span>🕒</span>
+          <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Commercial Properties. Generic demo showcase. All content, prices, and assets are sample data.</p>
+      <div class="footer-bottom-links">
+        <a href="about.html">Privacy Policy (Demo)</a>
+        <a href="about.html">Terms &amp; Conditions (Demo)</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="enquiryModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Property Enquiry</h3>
+      <p style="color: var(--color-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Demo enquiry form. No data is stored.</p>
+      <div id="modalSuccessAlert" class="form-alert alert-success">✓ Enquiry validated successfully.</div>
+      <form id="modalEnquiryForm">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label">Full Name *</label>
+          <input type="text" name="fullName" class="form-control" placeholder="John Doe">
+          <span class="form-feedback"></span>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" name="email" class="form-control" placeholder="name@business.com">
+            <span class="form-feedback"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" name="phone" class="form-control" placeholder="10-digit number">
+            <span class="form-feedback"></span>
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label class="form-label">Property Interest</label>
+          <input type="text" id="modalPropertyInterest" name="propertyInterest" class="form-control" value="Property Consultation">
+        </div>
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label class="form-label">Message</label>
+          <textarea name="message" class="form-control" rows="3" placeholder="Commercial requirement details..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-navy btn-block">Submit Demo Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">↑</button>
+  <script src="js/script.js"></script>
+
+  <!-- Script to dynamically populate property details based on URL ID -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const propId = urlParams.get('id');
+      if (propId && typeof COMMERCIAL_PROPERTIES !== 'undefined') {
+        const prop = COMMERCIAL_PROPERTIES.find(p => p.id === propId);
+        if (prop) {
+          document.title = `${prop.title} | COMMERCIAL PROPERTIES`;
+          const breadcrumbTitle = document.getElementById('detailBreadcrumbTitle');
+          if (breadcrumbTitle) breadcrumbTitle.textContent = prop.title;
+          
+          const titleEl = document.getElementById('detailTitle');
+          if (titleEl) titleEl.textContent = prop.title;
+
+          const locEl = document.getElementById('detailLocation');
+          if (locEl) locEl.textContent = '📍 ' + prop.location;
+
+          const priceEl = document.getElementById('detailPrice');
+          if (priceEl) priceEl.textContent = prop.priceFormatted;
+
+          const descEl = document.getElementById('detailDescription');
+          if (descEl) descEl.textContent = prop.description;
+
+          const badgeEl = document.getElementById('detailBadge');
+          if (badgeEl) {
+            badgeEl.className = prop.purpose === 'rent' ? 'badge badge-rent' : 'badge badge-buy';
+            badgeEl.textContent = prop.purpose === 'rent' ? 'For Lease / Rent' : 'For Sale';
+          }
+
+          const specArea = document.getElementById('specArea');
+          if (specArea) specArea.textContent = prop.areaFormatted;
+
+          const galleryMainImg = document.getElementById('galleryMainImageTag');
+          if (galleryMainImg && prop.imageUrl) {
+            galleryMainImg.src = prop.imageUrl;
+          }
+
+          const modalInterest = document.getElementById('modalPropertyInterest');
+          if (modalInterest) modalInterest.value = prop.title;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
